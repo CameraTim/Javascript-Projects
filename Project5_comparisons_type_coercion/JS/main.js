@@ -1,7 +1,6 @@
-/*function operator() {
-    document.write(typeof true);
-    document.getElementById("op").innerHTML;
-}*/
+function operator() {
+    document.getElementById("op").innerHTML = typeof true;
+}
 
 /*Coercion example of combining different value types*/
 function coer() {

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript V9</title>
+        <link rel="stylesheet" type="text/CSS" href="./CSS/main.css">
+	</head>
+	<body>
+        <div>
+            <p>How many seconds would you like to set your alarm for?</p>
+            <input id="seconds" value="" />
+            <button onclick="countdown()">Click here</button>
+            <p id="timer"></p>
+        </div>
+
+        <div class="SS-container">
+            <div class="myPhoto fade">
+                <img src="./Images/DSCF1045.JPG" style="width: 100%;">
+            </div>
+            <div class="myPhoto fade">
+                <img src="./Images/DSCF1092.JPG" style="width: 100%;">
+            </div>
+            <div class="myPhoto fade">
+                <img src="./Images/DSCF1139.JPG" style="width: 100%;">
+            </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <span class="slideDot" onclick="currentSlide(1)"></span>
+            <span class="slideDot" onclick="currentSlide(2)"></span>
+            <span class="slideDot" onclick="currentSlide(3)"></span>
+        </div>
+        
+        <script src="./JS/main.js"></script>
+	</body>
+</html>

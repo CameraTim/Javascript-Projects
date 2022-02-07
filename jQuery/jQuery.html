@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+        <!-- Calling the jQuery library-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	</head>
+	<body>
+        <script>
+            //Writing out the HTML code
+            $(document).ready(function() {
+                $("html").append(
+                    "<body>\
+                        <div id='container'>\
+                            <div id='inner'>\
+                                <h1 id='hideP'>Basic jQuery</h1>\
+                                <h2 id='showP'>Click for fun!</h2>\
+                                <p id='1'>Paragraph 1</p>\
+                                <p id='2'>Paragraph 2</p>\
+                                <p id='3'>Paragraph 3</p>\
+                            </div>\
+                        </div>\
+                    </body>"
+                );
+                //Changing the second p element to red
+                $("#2").css({"color":"red"});
+                //Setting the third p element to hide the h1 element, also making it unclickable
+                $("#3").click(function() {
+                    $('h1').hide();
+                    var str = "Welp, you can't have fun anymore..."
+                    $('h2').text(str);
+                });
+                //Setting the first p element to send a message to the console.log
+                $("#1").click(function() {
+                    console.log("You clicked!")
+                    });
+                //Setting the parameters for animating the hiding of all p elements
+                $('#hideP').click(function() {
+                    $("p").slideUp(1000);
+                });
+                //Parameters for showing all p elements
+                $('#showP').click(function() {
+                    $("p").slideDown(1000);
+                })
+                });
+        </script>
+	</body>
+</html>
